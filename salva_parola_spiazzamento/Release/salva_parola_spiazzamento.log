@@ -1,0 +1,3 @@
+﻿  main.c
+  LINK : è stata specificata l'opzione /LTCG ma non è richiesta la generazione del codice; rimuovere /LTCG dalla riga di comando del collegamento per migliorare le prestazioni del linker
+  salva_parola_spiazzamento.vcxproj -> C:\Users\utente\Desktop\Calcolatori elettronici\salva_parola_spiazzamento\Release\salva_parola_spiazzamento.exe

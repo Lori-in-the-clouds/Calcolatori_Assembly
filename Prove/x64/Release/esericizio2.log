@@ -1,0 +1,19 @@
+﻿  main.c
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(7,2): error C4235: utilizzata estensione non standard: parola chiave '__asm' non supportata in questa architettura
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(9,7): error C2065: 'mov': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(9,7): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'eax'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(9,10): error C2065: 'eax': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(10,3): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'mov'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(10,7): error C2065: 'mov': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(10,7): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'evx'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(10,10): error C2065: 'evx': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(11,3): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'add'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(11,7): error C2065: 'add': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(11,7): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'ebx'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(11,10): error C2065: 'ebx': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(12,3): error C2065: 'eax': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(12,3): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'mov'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(12,7): error C2065: 'mov': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(12,7): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'c'
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(13,2): error C2065: 'ebx': identificatore non dichiarato
+C:\Users\utente\Desktop\Calcolatori elettronici\esericizio2\main.c(13,2): error C2143: errore di sintassi: ';' mancante prima di '}'

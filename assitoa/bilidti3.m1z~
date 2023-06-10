@@ -1,0 +1,49 @@
+.586
+.model flat 
+.code 
+
+_assitoa proc 
+push ebp
+mov ebp,esp
+push esi 
+push edi 
+push ebx
+
+mov ecx,dword ptr[ebp+8]
+mov ebx,dword ptr[ebp+16]
+call _calcololunghezza
+mov eax,ecx
+
+pop ebx
+pop edi 
+pop esi 
+mov esp,ebp
+pop ebp
+ret
+_assitoa endp
+
+_calcololunghezza proc
+ 
+push ecx
+push edi 
+push edx
+mov edi,10
+mov eax,ecx
+mov esi,0
+;calcoliamo lunghezza 
+ciclo1:
+mov edx,0
+inc esi 
+
+div edi
+cmp eax,0
+je fine
+jmp ciclo1
+
+fine:
+pop edx
+pop edi 
+pop ecx
+_calcololunghezza endp
+
+end

@@ -1,0 +1,68 @@
+.586
+.model flat 
+.code 
+
+_togli_dispari proc 
+push ebp
+mov ebp,esp
+push edx
+push edi 
+push esi
+
+mov eax,0
+mov edx,0
+mov esi,0
+mov ecx,2
+mov ebx,dword ptr[ebp+8]
+mov edi,dword ptr[ebp+12]
+
+ciclo1:
+cmp esi,edi
+je fine
+mov al,byte ptr[ebx+esi]
+div ecx
+cmp edx,1
+je sostituiamo
+ritorno:
+inc esi
+jmp ciclo1
+
+sostituiamo:
+call _sostituiamo
+jmp ritorno
+
+
+fine:
+pop esi
+pop edi 
+pop edx
+mov esp,ebp
+pop ebp
+ret
+_togli_dispari endp
+
+_sostituiamo proc
+
+push edx
+push edi
+
+dec esi 
+mov al,byte ptr[ebx+esi]
+div ecx
+cmp edx,1
+je fine
+
+
+
+
+pop edi
+pop edx
+
+
+
+_sostituiamo endp
+
+
+
+
+end 

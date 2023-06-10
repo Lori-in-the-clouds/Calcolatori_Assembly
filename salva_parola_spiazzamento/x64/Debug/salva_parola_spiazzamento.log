@@ -1,0 +1,16 @@
+﻿  Assembling dimaio_lorenzo_301483.asm...
+dimaio_lorenzo_301483.asm(1): error A2008: syntax error : .
+dimaio_lorenzo_301483.asm(2): error A2008: syntax error : .
+dimaio_lorenzo_301483.asm(6): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(8): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(9): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(10): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(26): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(29): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(33): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(34): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(35): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(37): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(42): error A2070: invalid instruction operands
+dimaio_lorenzo_301483.asm(62): error A2070: invalid instruction operands
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: uscita dal comando "ml64.exe /c /nologo /Zi /Fo"x64\Debug\dimaio_lorenzo_301483.obj" /W3 /errorReport:prompt  /Tadimaio_lorenzo_301483.asm" con codice 1.

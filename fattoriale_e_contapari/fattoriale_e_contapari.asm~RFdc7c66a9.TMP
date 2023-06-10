@@ -1,0 +1,74 @@
+.586
+.model flat 
+.code 
+
+_fattoriale proc
+push ebp
+mov ebp,esp
+push esi 
+push edi 
+push ebx
+
+mov esi,dword ptr[ebp+8]
+mov eax,dword ptr[ebp+8]
+
+ciclo1:
+cmp esi,1
+je fine
+dec esi
+mul esi
+jmp ciclo1
+fine:
+pop ebx
+pop edi
+pop edi 
+mov esp,ebp
+pop ebp
+ret
+_fattoriale endp
+
+
+
+_contapari proc
+push ebp
+mov ebp,esp
+push esi
+push edi
+push ebx
+
+mov ebx,dword ptr[ebp + 8]
+mov ecx,dword ptr[ebp + 12]
+mov esi,dword ptr[ebp + 16]
+
+
+mov eax,dword ptr[ebx]
+mov edx,0
+
+ciclo1:
+cmp esi,0
+je fine
+dec esi
+mov eax,dword ptr[ebx+(4*esi)]
+cdq
+idiv 2
+cmp edx,0
+je trovatopari
+jmp ciclo1
+
+trovatopari:
+mov [ecx+(edi*4)],eax
+inc edi
+jmp ciclo1
+
+
+
+fine
+pop ebx
+pop edi 
+pop esi 
+mov esp,ebp
+pop ebp
+ret
+_contapari endp
+
+end

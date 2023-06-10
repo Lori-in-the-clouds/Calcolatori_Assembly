@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f9c37b2c-39b4-4ec5-a7ae-355c4b23095e": {
+      "ProjectGuid": "f9c37b2c-39b4-4ec5-a7ae-355c4b23095e",
+      "DisplayName": "fattoriale_e_contapari",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "File esterni",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

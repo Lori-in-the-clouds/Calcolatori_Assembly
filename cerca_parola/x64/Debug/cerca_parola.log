@@ -1,0 +1,17 @@
+﻿  Assembling cerca_parola.asm...
+cerca_parola.asm(1): error A2008: syntax error : .
+cerca_parola.asm(2): error A2008: syntax error : .
+cerca_parola.asm(6): error A2070: invalid instruction operands
+cerca_parola.asm(8): error A2070: invalid instruction operands
+cerca_parola.asm(9): error A2070: invalid instruction operands
+cerca_parola.asm(10): error A2070: invalid instruction operands
+cerca_parola.asm(32): error A2070: invalid instruction operands
+cerca_parola.asm(34): error A2070: invalid instruction operands
+cerca_parola.asm(36): error A2070: invalid instruction operands
+cerca_parola.asm(44): error A2070: invalid instruction operands
+cerca_parola.asm(58): error A2070: invalid instruction operands
+cerca_parola.asm(59): error A2070: invalid instruction operands
+cerca_parola.asm(60): error A2070: invalid instruction operands
+cerca_parola.asm(62): error A2070: invalid instruction operands
+cerca_parola.asm(51): error A2022: instruction operands must be the same size
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: uscita dal comando "ml64.exe /c /nologo /Zi /Fo"x64\Debug\cerca_parola.obj" /W3 /errorReport:prompt  /Tacerca_parola.asm" con codice 1.

@@ -1,0 +1,51 @@
+.586
+.model flat 
+.code 
+
+
+_bubblesort proc
+push ebp 
+mov ebp,esp
+push esi 
+push edi 
+push ebx
+
+mov ebx,dword ptr[ebp+8]
+mov esi,dword ptr[ebp+12]
+jmp ciclogrande
+ciclomedio:
+dec esi
+ciclogrande:
+cmp esi,0
+je fine1
+
+mov edi,0
+ciclo1:
+cmp edi,esi
+je ciclomedio
+mov ecx,dword ptr[ebx+edi*4]
+inc edi 
+cmp ecx,dword ptr[ebx+(edi)*4]
+jg scambia
+
+arrivo: 
+jmp ciclo1
+
+scambia: 
+mov edx,dword ptr[ebx+(edi)*4]
+mov dword ptr[ebx+(edi)*4],ecx
+dec edi
+mov dword ptr[ebx+edi*4],edx
+jmp arrivo
+dec esi 
+jmp ciclogrande
+
+fine1:
+pop ebx
+pop edi 
+pop esi 
+mov esp,ebp
+pop ebp
+ret
+_bubblesort endp
+end 

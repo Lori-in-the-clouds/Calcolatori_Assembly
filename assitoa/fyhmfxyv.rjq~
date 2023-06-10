@@ -1,0 +1,34 @@
+.586
+.model flat 
+.code 
+
+_assitoa proc 
+push ebp
+mov ebp,esp
+push esi 
+push edi 
+push ebx
+
+mov eax,dword ptr[ebp+8]
+mov ebx,dword ptr[ebp+16]
+call _calcololunghezza
+
+pop ebx
+pop edi 
+pop esi 
+mov esp,ebp
+pop ebp
+ret
+_assitoa endp
+
+_calcololunghezza 
+push esi 
+push ecx
+push edi 
+
+pop edi 
+pop ecx
+pop esi
+_calcololunghezza endp
+
+end

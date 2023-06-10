@@ -1,0 +1,14 @@
+﻿  Assembling conta_vocali.asm...
+conta_vocali.asm(1): error A2008: syntax error : .
+conta_vocali.asm(2): error A2008: syntax error : .
+conta_vocali.asm(6): error A2070: invalid instruction operands
+conta_vocali.asm(8): error A2070: invalid instruction operands
+conta_vocali.asm(9): error A2070: invalid instruction operands
+conta_vocali.asm(10): error A2070: invalid instruction operands
+conta_vocali.asm(17): error A2070: invalid instruction operands
+conta_vocali.asm(18): error A2070: invalid instruction operands
+conta_vocali.asm(19): error A2070: invalid instruction operands
+conta_vocali.asm(21): error A2070: invalid instruction operands
+conta_vocali.asm(28): error A2070: invalid instruction operands
+conta_vocali.asm(47): error A2070: invalid instruction operands
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: uscita dal comando "ml64.exe /c /nologo /Zi /Fo"x64\Debug\conta_vocali.obj" /W3 /errorReport:prompt  /Taconta_vocali.asm" con codice 1.

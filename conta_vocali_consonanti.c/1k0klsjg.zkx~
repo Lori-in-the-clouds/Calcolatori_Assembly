@@ -1,0 +1,105 @@
+.586
+.model flat 
+.code 
+
+_conta_vocali_consonanti proc
+push ebp
+mov ebp,esp 
+push esi 
+push edi 
+push ebx
+
+mov ebx,dword ptr[ebp+8]
+mov ecx,dword ptr[ebp+12]
+mov edx,dword ptr[ebp+16]
+call _rendimaiuscolo
+mov esi,0
+ciclo1:
+mov al,byte ptr[ebx+esi]
+cmp al,0
+je fine
+cmp al,65
+je incrementa_vocali
+cmp al,69
+je incrementa_vocali
+cmp al,73
+je incrementa_vocali
+cmp al,79
+je incrementa_vocali
+cmp al,85
+je incrementa_vocali
+
+cmp al,65
+jl andiamovia
+cmp al,90
+ja andiamovia
+
+incrementa_consonanti
+
+inc esi
+jmp ciclo1
+
+andiamovia:
+inc esi 
+jmp ciclo1
+
+incrementa_consonati
+push eax
+mov al,byte ptr[edx]
+inc al
+mov byte ptr[edx],al
+pop eax
+inc esi 
+jmp ciclo1
+
+
+incrementa_vocali:
+push eax
+mov al,byte ptr[ecx]
+inc al
+mov byte ptr[ecx],al
+inc esi
+pop eax
+jmp ciclo1
+
+
+
+
+fine:
+pop ebx
+pop edi 
+pop esi 
+mov esp,esp 
+pop ebp
+ret
+_conta_vocali_consonanti endp
+
+
+
+_rendimaiuscolo proc
+push esi
+
+
+mov esi,0
+ciclo1:
+mov al,byte ptr[ebx+esi]
+cmp al,0
+je fine
+
+cmp al,97
+jna incrementa
+cmp al,122
+jnl incrementa
+sub al,32
+mov byte ptr[ebx+esi],al
+inc esi
+jmp ciclo1
+
+incrementa:
+inc esi
+jmp ciclo1
+fine:
+pop esi
+ret
+_rendimaiuscolo endp 
+end

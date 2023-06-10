@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "467e9b15-8779-4326-ba86-9ac43b984558": {
+      "ProjectGuid": "467e9b15-8779-4326-ba86-9ac43b984558",
+      "DisplayName": "conta_vocali_consonanti.c",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "File esterni",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
